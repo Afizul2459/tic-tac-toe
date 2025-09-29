@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tic Tac Toe - JS</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <main class="game">
+        <h1>Tic Tac Toe</h1>
+
+        <div class="top">
+            <div class="status" id="status" aria-live="polite">Turn: X</div>
+            <label class="switch" title="Play vs Computer (O)">
+                <input type="checkbox" id="vs-cpu" />
+                <span>Vs Computer</span>
+            </label>
+            <div class="controls">
+                <button class="btn" id="new-round">New Round</button>
+                <button class="btn secondary" id="reset-score">Reset Score</button>
+            </div>
+        </div>
+
+        <section class="board" aria-label="Tic Tac Toe board" role="grid">
+            <button class="box" data-index="0" role="gridcell" aria-label="Cell 1, empty"></button>
+            <button class="box" data-index="1" role="gridcell" aria-label="Cell 2, empty"></button>
+            <button class="box" data-index="2" role="gridcell" aria-label="Cell 3, empty"></button>
+            <button class="box" data-index="3" role="gridcell" aria-label="Cell 4, empty"></button>
+            <button class="box" data-index="4" role="gridcell" aria-label="Cell 5, empty"></button>
+            <button class="box" data-index="5" role="gridcell" aria-label="Cell 6, empty"></button>
+            <button class="box" data-index="6" role="gridcell" aria-label="Cell 7, empty"></button>
+            <button class="box" data-index="7" role="gridcell" aria-label="Cell 8, empty"></button>
+            <button class="box" data-index="8" role="gridcell" aria-label="Cell 9, empty"></button>
+        </section>
+
+        <section class="score">
+            <div class="card">
+                <div class="label x">Player X</div>
+                <div class="value" id="score-x">0</div>
+            </div>
+            <div class="card">
+                <div class="label">Draws</div>
+                <div class="value" id="score-d">0</div>
+            </div>
+            <div class="card">
+                <div class="label o">Player O</div>
+                <div class="value" id="score-o">0</div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
