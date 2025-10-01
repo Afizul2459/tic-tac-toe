@@ -2,14 +2,6 @@
 
 A clean, responsive Tic Tac Toe game with a scoreboard, “vs Computer” mode, and winning-line highlight. No frameworks required—perfect for GitHub Pages.
 
-## 🚀 Live Demo
-- GitHub Pages: https://<your-username>.github.io/<your-repo-name>
-- Repository: https://github.com/<your-username>/<your-repo-name>
-
-> Replace <your-username> and <your-repo-name> after you publish.
-
----
-
 ## ✨ Features
 - Play: 2 players on one device or vs Computer (O)
 - Smart CPU: blocks wins and takes optimal spots (center/corners)
